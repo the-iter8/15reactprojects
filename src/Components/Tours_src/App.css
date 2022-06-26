@@ -1,3 +1,5 @@
+
+
 :root {
   --blue: #249bf0;
 }
@@ -8,24 +10,17 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: white;
-}
 
-h1 {
-  color: black;
-  text-align: center;
-  margin: 1em;
-}
-.card {
+.tcard {
   border-radius: 4px;
+  text-align: justify;
   width: 100%;
   padding: 1em;
+  margin: 3rem auto;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  margin: 5rem auto;
 }
 
-.card-img-top {
+.tcard img {
   border-radius: 4px;
   width: 100%;
   height: 20rem;
@@ -33,7 +28,7 @@ h1 {
   object-fit: cover;
 }
 
-.card-text {
+.tcard p {
   padding: 0.2rem 1rem;
 }
 
@@ -48,25 +43,25 @@ h1 {
   border-radius: 4px;
   background-color: #c6e2f6;
   padding: 0.3rem;
+  height: fit-content;
   letter-spacing: 0.1rem;
 }
 
 .readmore::before {
   content: "...";
   color: black;
-
 }
 
 .textbtn {
   text-decoration: none;
   background-color: inherit;
-  color: var(--blue) ;
+  color: var(--blue);
 }
 
-.btn-primary,
-.btn-primary:active,
-.btn-primary:hover,
-.btn-primary:focus {
+.tbtn,
+.tbtn:active,
+.tbtn:hover,
+.tbtn:focus {
   width: 200px;
   color: red;
   display: block;
@@ -76,7 +71,8 @@ h1 {
 }
 
 @media only screen and (min-width: 768px) {
-  .container {
+  .tcontainer {
     max-width: 620px;
+    margin: 0 auto;
   }
 }

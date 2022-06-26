@@ -6,12 +6,12 @@ export default function Footer() {
       <footer>
         <div id="iter8-container">
           <h1>
-            Made with ❤️ by
+            Made with ❤️ by 
             <a
               href="https://www.linkedin.com/in/ankit-sharma-561b291b0/"
               target="_blank"
             >
-              Iter8.
+              {" "}Iter8.
             </a>
           </h1>
           <div id="iter8-components">

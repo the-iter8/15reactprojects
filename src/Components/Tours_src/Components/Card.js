@@ -14,7 +14,7 @@ export default function Card(props) {
 
   const [readmore, setReadmore] = useState(false);
   return (
-    <div className="card">
+    <div className="tcard card">
       <img src={image} className="card-img-top" alt="..." />
       <div className="card-body">
         <div className="titles">
@@ -47,7 +47,7 @@ export default function Card(props) {
           )}
         </p>
 
-        <button className="btn btn-primary" onClick={clickHandle}>
+        <button className="tbtn btn btn-primary" onClick={clickHandle}>
           Remove{" "}
         </button>
       </div>
