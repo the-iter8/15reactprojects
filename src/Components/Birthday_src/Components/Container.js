@@ -8,12 +8,14 @@ export default function Container() {
   return (
     <>
       <div className="bcontainer container">
-        <h4>{people.length} birthdays today</h4>
+        <h4 className="mainHeading">
+          <strong>{people.length} birthdays today</strong>
+        </h4>
 
         {people.map((singleData) => {
           return <Row key={singleData.id} {...singleData} />;
         })}
-        
+
         <button
           type="button"
           className="btn btnb btn-primary"
@@ -22,7 +24,7 @@ export default function Container() {
           }}
         >
           Clear all
-        </button> 
+        </button>
       </div>
     </>
   );

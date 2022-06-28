@@ -4,7 +4,6 @@ import Loading from "./Loading";
 
 // import data from "./data";
 // Use the hard coded data if the API doesnt works.
-
 // handle the data and remove button
 
 export default function Container() {
@@ -25,7 +24,7 @@ export default function Container() {
       <>
         <div className="tcontainer container">
           <div className="headingContainer">
-            <h1 className="mainHeading">Our Tours</h1>
+            <h1 className="mainHeading"><strong>Our Tours</strong></h1>
             <div className="hLine">
               <div className="hLineSub"></div>
             </div>

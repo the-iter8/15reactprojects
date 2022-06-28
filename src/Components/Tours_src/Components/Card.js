@@ -14,7 +14,7 @@ export default function Card(props) {
 
   const [readmore, setReadmore] = useState(false);
   return (
-    <div className="tcard card">
+    <div className="tCard card">
       <img src={image} className="card-img-top" alt="..." />
       <div className="card-body">
         <div className="titles">

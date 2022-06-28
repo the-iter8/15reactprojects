@@ -6,6 +6,14 @@
   --pink: #f28ab2;
   --shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  /* outline: 3px solid limegreen; */
+}
 body {
   background-color: #fff;
 }
@@ -148,6 +156,7 @@ footer a:hover,
 
 .card-title {
   transition: 0.1s ease-in-out;
+  margin-right: 0 0.5em;
 }
 
 .items:hover {

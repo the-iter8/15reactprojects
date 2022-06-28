@@ -1,0 +1,72 @@
+
+.rContainer {
+  margin-top: 6%;
+  text-align: center;
+  padding: 2em;
+  width: 50%;
+}
+
+.rCard {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border: 0;
+}
+
+.rCard img {
+  width: 9em;
+  height: 9em;
+  border-radius: 50%;
+  margin: 1.5em auto;
+  margin-bottom: 0;
+  object-fit: cover;
+  box-shadow: 5px -9px 0px 0px rgba(73, 166, 233, 1);
+}
+.rQuoteIcon {
+  background-color: #49a6e9;
+  color: white;
+  font-size: 4rem;
+  line-height: 1em;
+  height: 0.6em;
+  width: 0.6em;
+  border-radius: 50%;
+
+  position: absolute;
+  right: 56%;
+  top: 8%;
+}
+
+.rCardTitle {
+  padding: 0;
+  margin: 0;
+}
+
+.rCardSubTitle {
+  color: #49a6e9;
+}
+
+.rCardText {
+  color: rgba(59, 59, 59, 0.825);
+  padding: 1em;
+}
+
+.btnContainer {
+  width: 15%;
+  margin: 1em auto;
+
+  display: flex;
+  justify-content: space-around;
+}
+.rNavBtns
+{
+  border: 0;
+  background-color: inherit;
+}
+.rNavBtns:hover {
+  cursor: pointer;
+}
+
+.rBtnSurprise
+{
+  background-color: #0391f64f;
+  color: #0095ff;
+  border: none;
+}

@@ -1,17 +1,18 @@
 import React, { useState, useEffect } from "react";
 import Birthday from "./Birthday_src/Birthday";
-import Tours from "./Tours_src/App";
+import Tours from "./Tours_src/Tours";
+import Reviews from "./Reviews_src/Reviews";
 // Add the loading screen
 // Change the go back button
-
-// Change the fonts 
+// Change the fonts
+// Change the IMGUR hosting to some other host.
 
 const data = [
   {
     id: 1,
     image: "https://i.imgur.com/CBKXK6G.jpg",
     name: "Birthday",
-    info: "A simple application that displays a set of birthdays from an API call and a use case of the useState hook. ",
+    info: "A simple application that displays a set of birthdays from an API. ",
     bColor: "#f28ab2",
     btnP: <Birthday />,
   },
@@ -19,18 +20,17 @@ const data = [
     id: 2,
     image: "https://i.imgur.com/92k0SoD.jpg",
     name: "Tours",
-    info: "An application that displays a set of tours from an API call using the useState and useEffect hook.",
+    info: "An application that displays a set of tours from an API.",
     bColor: "#fff",
     btnP: <Tours />,
   },
   {
     id: 3,
-    image:
-      "https://dl.airtable.com/.attachments/27f6cbfe631e303f98b97e9dafacf25b/6bbe2a07/vienna.jpeg",
-    name: "Example 3",
-    info: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, neque! Cat kha hai?",
+    image: "https://i.imgur.com/SBM9Z0c.jpg",
+    name: "Reviews",
+    info: "An application that displays a set of reviews.",
     bColor: "#fff",
-    btnP: <Tours />,
+    btnP: <Reviews />,
   },
   {
     id: 4,
@@ -44,7 +44,12 @@ const data = [
 ];
 export default function Container() {
   const [project, setProject] = useState(Default);
-  const [isDefault, setIsDefault] = useState(true);
+
+  // For handling the back button.
+  const [isDefault, setIsDefault] = useState(false);
+  useEffect(() => {
+    setIsDefault(!isDefault);
+  }, [project]);
 
   const functionCall = (bColor) => {
     document.querySelector("#root").style.backgroundColor = `${bColor}`;
@@ -56,9 +61,11 @@ export default function Container() {
       <>
         <div className="container">
           <div className="headingContainer">
-            <h1 className="mainHeading">15 Basic React Projects </h1>
+            <h1 className="mainHeading">
+              <strong>15 Basic React Projects </strong>
+            </h1>
             <h4 className="mainHeading ">
-              that are based on react...(obviously){" "}
+              that are based on react...(obviously 🐈🐕){" "}
             </h4>
           </div>
 
@@ -71,7 +78,7 @@ export default function Container() {
                   className="items card"
                   key={id}
                   onClick={() => {
-                    setIsDefault(false);
+                    // setIsDefault(false);
                     setProject(btnP);
                     functionCall(bColor);
                   }}
@@ -107,9 +114,8 @@ export default function Container() {
         <button
           className="btnBack btn btn-primary"
           onClick={() => {
-            setProject(Default);
-            setIsDefault(false);
             functionCall("#fff");
+            setProject(Default);
           }}
         >
           {" "}
