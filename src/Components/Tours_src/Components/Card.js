@@ -3,7 +3,8 @@ import React, { useState } from "react";
 export default function Card(props) {
   const { image, name, info, price } = props;
 
-  // read more handling. n
+  // read more handling.
+
   const infoOne = info.slice(0, 0.34 * info.length);
   const infoTwo = info.slice(0.34 * info.length, info.length);
 

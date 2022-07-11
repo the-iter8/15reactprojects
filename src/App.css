@@ -12,10 +12,15 @@
   padding: 0;
   border: 0;
   box-sizing: border-box;
-  /* outline: 3px solid limegreen; */
 }
 body {
   background-color: #fff;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: inherit;
 }
 .hLine {
   height: 3px;
@@ -41,16 +46,11 @@ body {
     right: 0%;
   }
 }
-
+/* this */
 .mainHeading {
   color: black;
   text-align: center;
-
-  font-family: "Roboto", sans-serif;
   font-family: "Didact Gothic", sans-serif;
-}
-.headingContainer {
-  margin: 3em;
 }
 
 /* ONLY FOR THE FOOTER COMPONENT*/
@@ -130,7 +130,8 @@ footer a:hover,
 /* FOOTER ENDS */
 /* FOOTER ENDS*/
 
-.container {
+/* this */
+.dContainer {
   text-align: center;
   font-family: "Roboto", sans-serif;
 }
@@ -182,8 +183,9 @@ footer a:hover,
   }
 }
 
-.btnBack {
+.backBtn
+{
   position: absolute;
-  left: 10%;
+  left: 20%;
   top: 10%;
 }

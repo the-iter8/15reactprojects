@@ -1,0 +1,38 @@
+.fContainer {
+  width: 65%;
+  background-color: white;
+  display: flex;
+  padding: 2em;
+  margin: 5% auto;
+  flex-direction: row;
+  border-radius: 2px;
+}
+.qCard {
+  margin: 0.5em;
+  padding: 0.5em;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+/* This */
+.headingContainer {
+  padding: 1em;
+}
+
+.qCardTitle {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+}
+.fHr {
+  margin: 0.5rem;
+}
+.fInfo {
+  padding: 1em;
+  margin: 0;
+}
+/* this */
+.btnContainer,
+.fControlBtn {
+  background-color: inherit;
+  border-radius: 50%;
+  cursor: pointer;
+}

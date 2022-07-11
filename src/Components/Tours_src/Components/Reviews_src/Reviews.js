@@ -1,11 +1,10 @@
 import "./App.css";
+import React from "react";
 import Container from "./Components/Container";
-import BackBtn from "../BackBtn";
 function App() {
   return (
     <>
-      <BackBtn />
-      <Container />
+      <Container></Container>
     </>
   );
 }

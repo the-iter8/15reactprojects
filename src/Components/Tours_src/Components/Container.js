@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Card from "./Card";
-import Loading from "./Loading";
+import Reviews from "./Reviews_src/Reviews";
+import FAQ from "./FAQ_src/FAQ";
 
 // import data from "./data";
 // Use the hard coded data if the API doesnt works.
@@ -16,31 +17,28 @@ export default function Container() {
   };
 
   useEffect(() => {
+    console.log("This is called again. ")
     getData();
   }, []);
 
-  if (tours !== []) {
-    return (
-      <>
-        <div className="tcontainer container">
-          <div className="headingContainer">
-            <h1 className="mainHeading"><strong>Our Tours</strong></h1>
-            <div className="hLine">
-              <div className="hLineSub"></div>
-            </div>
+  return (
+    <>
+      <div className="tcontainer container">
+        <div className="headingContainer">
+          <h1 className="mainHeading">
+            <strong>Our Tours</strong>
+          </h1>
+          <div className="hLine">
+            <div className="hLineSub"></div>
           </div>
-
-          {tours.map((tour) => {
-            return <Card key={tour.id} {...tour}></Card>;
-          })}
         </div>
-      </>
-    );
-  } else {
-    return (
-      <>
-        <Loading />
-      </>
-    );
-  }
+
+        {tours.map((tour) => {
+          return <Card key={tour.id} {...tour}></Card>;
+        })}
+      </div>
+      <Reviews />
+      <FAQ />
+    </>
+  );
 }

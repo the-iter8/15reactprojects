@@ -1,13 +1,7 @@
 import "./App.css";
 import Container from "./Components/Container";
-import BackBtn from "../BackBtn";
 function App() {
-  return (
-    <>
-      <BackBtn />
-      <Container />
-    </>
-  );
+  return <Container />;
 }
 
 export default App;

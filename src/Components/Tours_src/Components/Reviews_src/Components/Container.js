@@ -1,15 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 // React Icons
 import { FcNext, FcPrevious } from "react-icons/fc";
 import data from "../data";
 
 export default function Container() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [currentPerson, setCurrentPerson] = useState(data[0]);
+  // There was no use to define this 
+  // const [currentPerson, setCurrentPerson] = useState(data[0]);
+  const { id, name, job, image, text } = data[currentIndex];
 
-  useEffect(() => {
-    setCurrentPerson(data[currentIndex]);
-  }, [currentIndex]);
+  // We didnt required this as well. 
+  // useEffect(() => {
+  //   setCurrentPerson(data[currentIndex]);
+  // }, [currentIndex]);
 
   // Had to make 2 different handlers because it was more efficient.
   const prevNavHandler = () => {
@@ -30,8 +33,6 @@ export default function Container() {
   const surpriseHandler = () => {
     setCurrentIndex(Math.floor(Math.random() * 4));
   };
-
-  const { id, name, job, image, text } = currentPerson;
 
   return (
     <>
@@ -55,7 +56,7 @@ export default function Container() {
 
             <p className="rCardText card-text">{text}</p>
 
-            <div className="btnContainer">
+            <div className="rBtnContainer btnContainer">
               <button className="rNavBtns" id="pNav" onClick={prevNavHandler}>
                 <FcPrevious size="1.5em"></FcPrevious>
               </button>

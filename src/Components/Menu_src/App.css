@@ -1,0 +1,88 @@
+
+.headingContainer {
+  text-align: center;
+  margin: 3em 0;
+}
+
+.mBtnContainer {
+  display: flex;
+  width: 25%;
+  margin: 3em auto;
+  justify-content: space-around;
+}
+
+.menuType {
+  text-align: center;
+  background-color: inherit;
+  color: #c59d5f;
+  border: 0;
+}
+
+.menuType:hover,
+.menuType:active,
+.menuType:focus {
+  color: white;
+  background-color: #c59d5f;
+  border: none;
+  box-shadow: none;
+}
+
+.mCard {
+  border: none;
+  cursor: pointer;
+  margin: 1em;
+  display: flex;
+  max-width: 47%;
+  flex-direction: row;
+}
+
+.mImg {
+  height: 9em;
+  min-width: 40%;
+  border-radius: 5px;
+  object-fit: cover;
+  border: 2px solid gold;
+}
+.mTitle {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted black;
+}
+
+.mCardBody {
+  position: relative;
+  bottom: 10%;
+}
+
+.mName {
+  text-transform: capitalize;
+}
+.mName,
+.mInfo,
+.mPrice {
+  font-size: 1em;
+}
+.mInfo {
+  padding: 0.5em 0.2em;
+}
+.mPrice {
+  margin-bottom: 0;
+  color: #c59d5f;
+}
+
+.mCard:hover .mTooltip {
+  visibility: visible;
+}
+
+.mTooltip {
+  position: absolute;
+  right: 0px;
+
+  margin: 1em;
+  padding: 0.4em 0.6em;
+  line-height: 100%;
+  text-transform: capitalize;
+  visibility: hidden;
+  border-radius: 5px;
+  border: 1.5px solid black;
+}

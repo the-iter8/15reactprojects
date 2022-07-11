@@ -3,12 +3,6 @@
 :root {
   --blue: #249bf0;
 }
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  box-sizing: border-box;
-}
 
 .tCard {
   width: 100%;

@@ -5,10 +5,11 @@
   width: 85px;
   border-radius: 50%;
 }
+.name {
+  margin-bottom: 0;
+}
 
-
-.age
-{
+.age {
   left: 10px;
 }
 .btnb,
@@ -26,7 +27,7 @@
 .brow {
   display: flex;
   flex-direction: row;
-  text-align: left  ;
+  text-align: left;
   margin: 2em 0em;
 }
 .bcontainer {
@@ -37,8 +38,4 @@
   border-radius: 0.25rem;
   background-color: whitesmoke;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
-}
-.name
-{
-  margin-bottom: 0;
 }

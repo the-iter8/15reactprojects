@@ -1,7 +1,5 @@
-
 .rContainer {
-  margin-top: 6%;
-  text-align: center;
+  text-align: center;  
   padding: 2em;
   width: 50%;
 }
@@ -47,16 +45,15 @@
   color: rgba(59, 59, 59, 0.825);
   padding: 1em;
 }
-
-.btnContainer {
+/* This */
+.rBtnContainer {
   width: 15%;
   margin: 1em auto;
 
   display: flex;
   justify-content: space-around;
 }
-.rNavBtns
-{
+.rNavBtns {
   border: 0;
   background-color: inherit;
 }
@@ -64,8 +61,7 @@
   cursor: pointer;
 }
 
-.rBtnSurprise
-{
+.rBtnSurprise {
   background-color: #0391f64f;
   color: #0095ff;
   border: none;
