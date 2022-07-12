@@ -18,7 +18,7 @@ export default function Container() {
   };
   return (
     <>
-      <div className="container mContainer">
+      <div className="container mContainer" id="menu">
         <div className="headingContainer">
           <h1 className="mainHeading">
             <strong>Our Menu.</strong>{" "}

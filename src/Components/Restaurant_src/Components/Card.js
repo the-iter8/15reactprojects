@@ -12,7 +12,7 @@ export default function Card(props) {
           <h5 className="mPrice">${price}</h5>
         </div>
 
-        <p className="card-text mInfo text-muted">
+        <p className="card-text mInfo">
           {desc}
           <span className="mTooltip">{category}</span > 
           {/* display only if the all option is there */}

@@ -1,4 +1,3 @@
-
 .headingContainer {
   text-align: center;
   margin: 3em 0;
@@ -15,7 +14,7 @@
   text-align: center;
   background-color: inherit;
   color: #c59d5f;
-  border: 0;
+  border: 1px solid gold;
 }
 
 .menuType:hover,
@@ -23,8 +22,8 @@
 .menuType:focus {
   color: white;
   background-color: #c59d5f;
-  border: none;
   box-shadow: none;
+  border: 1px solid gold;
 }
 
 .mCard {
@@ -85,4 +84,76 @@
   visibility: hidden;
   border-radius: 5px;
   border: 1.5px solid black;
+}
+
+.rNavbar {
+  display: flex;
+  justify-content: space-around;
+}
+
+.rNavLinks {
+  font-weight: 600;
+}
+
+.rNavLinks:hover {
+  line-height: 1em;
+  border-bottom: 3px solid black;
+}
+.rNBtnContainer {
+  width: 40%;
+  display: flex;
+  margin: 2em 0em;
+  justify-content: space-around;
+}
+
+.rSignUp,
+.functionalBtn {
+  border-radius: 40px;
+  border: 2px solid #c46744;
+  color: #c46744;
+  background-color: inherit;
+  padding: 0.5em 1em;
+}
+
+.rContainer {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  justify-content: space-between;
+}
+.rSidePanels {
+  gap: 1em;
+  color: #c466446c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.rLandingPage {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.landingPageR {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 45%;
+}
+.rMainHeading {
+  font-size: 3em;
+  text-align: left;
+  font-weight: 350;
+}
+
+.rBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.functionalBtn {
+  transform: scale(1.3);
+  border-radius: 0.5em;
+  color: black;
 }
