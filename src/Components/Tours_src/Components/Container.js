@@ -17,7 +17,6 @@ export default function Container() {
   };
 
   useEffect(() => {
-    console.log("This is called again. ")
     getData();
   }, []);
 

@@ -36,7 +36,7 @@ export default function Container() {
 
   return (
     <>
-      <div className="rContainer container">
+      <div className="reContainer container">
         <div className="headingContainer">
           <h1 className="mainHeading">
             <strong>Our Reviews </strong>
@@ -46,28 +46,28 @@ export default function Container() {
           </div>
         </div>
 
-        <div className="rCard card" key={id}>
-          <span className="rQuoteIcon">“</span>
+        <div className="reCard card" key={id}>
+          <span className="reQuoteIcon">“</span>
           <img src={image} className="card-img-top" alt="..." />
 
           <div className="card-body">
-            <h5 className="rCardTitle card-title">{name}</h5>
-            <span className="rCardSubTitle card-sub-title">{job}</span>
+            <h5 className="reCardTitle card-title">{name}</h5>
+            <span className="reCardSubTitle card-sub-title">{job}</span>
 
-            <p className="rCardText card-text">{text}</p>
+            <p className="reCardText card-text">{text}</p>
 
-            <div className="rBtnContainer btnContainer">
-              <button className="rNavBtns" id="pNav" onClick={prevNavHandler}>
+            <div className="reBtnContainer btnContainer">
+              <button className="reNavBtns" id="pNav" onClick={prevNavHandler}>
                 <FcPrevious size="1.5em"></FcPrevious>
               </button>
-              <button className="rNavBtns" id="rNav" onClick={nextNavHandler}>
+              <button className="reNavBtns" id="reNav" onClick={nextNavHandler}>
                 <FcNext size="1.5em"></FcNext>
               </button>
             </div>
 
             <a
               href="#"
-              className="rBtnSurprise btn btn-primary"
+              className="reBtnSurprise btn btn-primary"
               onClick={surpriseHandler}
             >
               Surprise me

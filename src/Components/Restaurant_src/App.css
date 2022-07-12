@@ -1,3 +1,6 @@
+*{
+  outline: 1px solid black;
+}
 .headingContainer {
   text-align: center;
   margin: 3em 0;
@@ -30,6 +33,7 @@
   border: none;
   cursor: pointer;
   margin: 1em;
+  background-color: inherit;
   display: flex;
   max-width: 47%;
   flex-direction: row;
@@ -86,7 +90,13 @@
   border: 1.5px solid black;
 }
 
-.rNavbar {
+/* Home page */
+
+.rNavbar,
+.rNBtnContainer,
+.rContainer,
+.rLandingPage,
+.landingPageR {
   display: flex;
   justify-content: space-around;
 }
@@ -101,9 +111,7 @@
 }
 .rNBtnContainer {
   width: 40%;
-  display: flex;
   margin: 2em 0em;
-  justify-content: space-around;
 }
 
 .rSignUp,
@@ -116,28 +124,23 @@
 }
 
 .rContainer {
-  display: flex;
   flex-direction: row;
   min-width: 100%;
-  justify-content: space-between;
+  margin-top: 5%;
 }
 .rSidePanels {
   gap: 1em;
   color: #c466446c;
-  display: flex;
   flex-direction: column;
+  display: flex;
   justify-content: center;
 }
 
 .rLandingPage {
-  display: flex;
   flex-direction: row;
-  justify-content: space-around;
 }
 .landingPageR {
-  display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 45%;
 }
 .rMainHeading {

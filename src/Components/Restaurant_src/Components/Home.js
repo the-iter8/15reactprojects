@@ -29,7 +29,6 @@ export default function Home() {
       </div>
 
       <div className="rContainer container">
-        {/* Flex direction row */}
         <div className="rSidePanels">
           <a href="http://">
             <RiFacebookBoxLine size="1.5em"></RiFacebookBoxLine>
@@ -48,12 +47,15 @@ export default function Home() {
           <div className="landingPageR">
             <div className="rMainHeading">
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi,
-                quae?
+                Lorem ipsum if cattu sit doggu sit doggu angii cattu make doggu
+                happy, quae?
               </p>
             </div>
             <div className="rBtnDiv">
               <button
+                onClick={() => {
+                  document.getElementById("menu").scrollIntoView();
+                }}
                 className="functionalBtn"
                 style={{ backgroundColor: "#c4664463" }}
               >

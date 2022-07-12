@@ -1,15 +1,15 @@
-.rContainer {
+.reContainer {
   text-align: center;  
   padding: 2em;
   width: 50%;
 }
 
-.rCard {
+.reCard {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
   border: 0;
 }
 
-.rCard img {
+.reCard img {
   width: 9em;
   height: 9em;
   border-radius: 50%;
@@ -18,7 +18,7 @@
   object-fit: cover;
   box-shadow: 5px -9px 0px 0px rgba(73, 166, 233, 1);
 }
-.rQuoteIcon {
+.reQuoteIcon {
   background-color: #49a6e9;
   color: white;
   font-size: 4rem;
@@ -32,36 +32,36 @@
   top: 8%;
 }
 
-.rCardTitle {
+.reCardTitle {
   padding: 0;
   margin: 0;
 }
 
-.rCardSubTitle {
+.reCardSubTitle {
   color: #49a6e9;
 }
 
-.rCardText {
+.reCardText {
   color: rgba(59, 59, 59, 0.825);
   padding: 1em;
 }
 /* This */
-.rBtnContainer {
+.reBtnContainer {
   width: 15%;
   margin: 1em auto;
 
   display: flex;
   justify-content: space-around;
 }
-.rNavBtns {
+.reNavBtns {
   border: 0;
   background-color: inherit;
 }
-.rNavBtns:hover {
+.reNavBtns:hover {
   cursor: pointer;
 }
 
-.rBtnSurprise {
+.reBtnSurprise {
   background-color: #0391f64f;
   color: #0095ff;
   border: none;

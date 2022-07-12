@@ -183,9 +183,15 @@ footer a:hover,
   }
 }
 
-.backBtn
+.backBtn:hover{
+  opacity: 1;
+}
+
+
+.backBtn  
 {
+  opacity: 0.4;
   position: absolute;
-  left: 20%;
-  top: 10%;
+  left: 1%;
+  top: 1%;
 }
