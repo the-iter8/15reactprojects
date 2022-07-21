@@ -42,7 +42,7 @@ export default function Container() {
                     className="btnContainer"
                     onClick={() => clickHandle(questionIndex)}
                   >
-                    {display == questionIndex ? (
+                    {display === questionIndex ? (
                       <AiFillMinusCircle size="2.4em" />
                     ) : (
                       <AiFillPlusCircle size="2.4em" />
@@ -50,7 +50,7 @@ export default function Container() {
                   </button>
                 </div>
 
-                {display == questionIndex ? (
+                {display === questionIndex ? (
                   <>
                     <hr className="fHr" />
                     <p className="fInfo">{info}</p>

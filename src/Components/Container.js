@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 
 // Add the loading screen
@@ -32,8 +32,6 @@ const data = [
   },
 ];
 export default function Container() {
-  const [currentProject, setCurrentProject] = useState(`/`);
-
   const backgroundSet = (bColor) => {
     document.querySelector("#root").style.backgroundColor = `${bColor}`;
     document.querySelector("html").style.backgroundColor = `${bColor}`;
@@ -96,23 +94,4 @@ export default function Container() {
       </div>
     </>
   );
-  // return (
-  //   <>
-  //     {project}
-  //     {isDefault === true ? (
-  //       <></>
-  //     ) : (
-  //       <button
-  //         className="btnBack btn btn-primary"
-  //         onClick={() => {
-  //           functionCall("#fff");
-  //           setProject(Default);
-  //         }}
-  //       >
-  //         {" "}
-  //         Go back
-  //       </button>
-  //     )}
-  //   </>
-  // );
 }

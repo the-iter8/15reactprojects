@@ -1,4 +1,4 @@
-export default [
+const bdays = [
   {
     id: 1,
     name: "Jester nigama",
@@ -30,3 +30,5 @@ export default [
     image: "./images/download.jpg",
   },
 ];
+
+export default bdays;

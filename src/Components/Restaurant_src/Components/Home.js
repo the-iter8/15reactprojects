@@ -9,19 +9,19 @@ import {
 export default function Home() {
   return (
     <>
-      <div className="rNavbar navbar">
+      <div className="rNavbar navbar" id="top">
         <img src="./images/REST.png" alt="" className="rImg" />
         <div className="rNBtnContainer">
-          <a href="" className="rNavLinks">
+          <a href="#top" className="rNavLinks">
             HOME
           </a>
           <a href="#menu" className="rNavLinks">
             MENU
           </a>
-          <a href="" className="rNavLinks">
+          <a href="#top" className="rNavLinks">
             OUR STORY
           </a>
-          <a href="" className="rNavLinks">
+          <a href="#top" className="rNavLinks">
             CONTACT
           </a>
         </div>

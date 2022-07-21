@@ -6,12 +6,14 @@ export default function Footer() {
       <footer>
         <div id="iter8-container">
           <h1>
-            Made with ❤️ by 
+            Made with ❤️ by
             <a
               href="https://www.linkedin.com/in/ankit-sharma-561b291b0/"
               target="_blank"
+              rel="noreferrer"
             >
-              {" "}Iter8.
+              {" "}
+              Iter8.
             </a>
           </h1>
           <div id="iter8-components">
@@ -25,6 +27,7 @@ export default function Footer() {
                 <a
                   href="https://instagram.com/numismatic_tendencies"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <p>Instagram</p>
                 </a>
@@ -32,7 +35,11 @@ export default function Footer() {
 
               <div id="github">
                 <p>
-                  <a href="https://github.com/the-iter8" target="_blank">
+                  <a
+                    href="https://github.com/the-iter8"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     Github
                   </a>
                 </p>

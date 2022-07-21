@@ -5,11 +5,11 @@ import data from "../data";
 
 export default function Container() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // There was no use to define this 
+  // There was no use to define this
   // const [currentPerson, setCurrentPerson] = useState(data[0]);
   const { id, name, job, image, text } = data[currentIndex];
 
-  // We didnt required this as well. 
+  // We didnt required this as well.
   // useEffect(() => {
   //   setCurrentPerson(data[currentIndex]);
   // }, [currentIndex]);
@@ -66,7 +66,7 @@ export default function Container() {
             </div>
 
             <a
-              href="#"
+              href="#pNav"
               className="reBtnSurprise btn btn-primary"
               onClick={surpriseHandler}
             >
