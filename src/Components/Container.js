@@ -39,8 +39,6 @@ export default function Container() {
 
   const cardClickHandle = (bColor, id) => {
     const projectLink = `/${data[id].linkTo}`;
-    setCurrentProject(projectLink);
-
     //Clicking the Router link.
     document.querySelector(`a[href="${projectLink}"]`).click();
 
